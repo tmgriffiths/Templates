@@ -1,7 +1,7 @@
-% Requires the booktabs if the memoir class is not being used
+% Requires booktabs if the memoir class is not being used
 \begin{table}[htbp]
    \centering
-   %\topcaption{Table captions are better up top} % requires the topcapt package
+   \caption{Remember, \emph{never} use vertical lines in tables.}\label{tab:booktabs}
    \begin{tabular}{@{} lcr @{}} % Column formatting, @{} suppresses leading/trailing space
       \toprule
       \multicolumn{2}{c}{Item} \\
@@ -15,6 +15,4 @@
       Armadillo & frozen   &  8.99 \\
       \bottomrule
    \end{tabular}
-   \caption{Remember, \emph{never} use vertical lines in tables.}
-   \label{tab:booktabs}
 \end{table}

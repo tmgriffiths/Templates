@@ -4,6 +4,7 @@
 \AtBeginEnvironment{scheme}{\addfontfeature{Numbers=Lining}}
 \AtBeginEnvironment{enumerate}{\addfontfeature{Numbers=Lining}}
     
-\renewcommand{\thesection}{\addfontfeature{Numbers=Lining}{\arabic{section}}}
-\renewcommand{\thesubsection}{\addfontfeature{Numbers=Lining}{\thesection.\arabic{subsection}}}
-\renewcommand{\thesubsubsection}{\addfontfeature{Numbers=Lining}{\thesection.\thesubsection.\arabic{subsubsection}}}
+\renewcommand{\thechapter}{\addfontfeature{Numbers=Lining}{\arabic{chapter}}}    
+\renewcommand{\thesection}{\addfontfeature{Numbers=Lining}{\thechapter.\arabic{section}}}
+\renewcommand{\thesubsection}{\addfontfeature{Numbers=Lining}{\thechapter.\thesection.\arabic{subsection}}}
+\renewcommand{\thesubsubsection}{\addfontfeature{Numbers=Lining}{\thechapter.\thesection.\thesubsection.\arabic{subsubsection}}}
