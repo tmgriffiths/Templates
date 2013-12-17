@@ -1,0 +1,9 @@
+\usepackage{etoolbox}
+\AtBeginEnvironment{tabular}{\addfontfeature{Numbers=Lining}}
+\AtBeginEnvironment{figure}{\addfontfeature{Numbers=Lining}}
+\AtBeginEnvironment{scheme}{\addfontfeature{Numbers=Lining}}
+\AtBeginEnvironment{enumerate}{\addfontfeature{Numbers=Lining}}
+    
+\renewcommand{\thesection}{\addfontfeature{Numbers=Lining}{\arabic{section}}}
+\renewcommand{\thesubsection}{\addfontfeature{Numbers=Lining}{\thesection.\arabic{subsection}}}
+\renewcommand{\thesubsubsection}{\addfontfeature{Numbers=Lining}{\thesection.\thesubsection.\arabic{subsubsection}}}
